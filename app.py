@@ -10,7 +10,6 @@ def print_item(box, itemname):
     print(f'There is a price of {itemname}: ')
     return(box[itemname])
 
-    
 def add_bread(box):
     itemname = 'bread'
     itemvalue = 10
