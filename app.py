@@ -8,16 +8,16 @@ print("pr3")
 
 def print_item(box, itemname):
     print(f'There is a price of {itemname}: ')
-    return(box[itemname])
+    return(f"{box[itemname]}")
 
 def add_bread(box):
     itemname = 'bread'
     itemvalue = 10
     box[itemname] = itemvalue
-    return(box)
+    return(f'{box}')
 
 def print_basket_len(box):
-    return(len(box))
+    return(f'{len(box)}')
 
 def print_basket(box):
     return(f"{box}")
@@ -26,9 +26,9 @@ def print_basket(box):
 box = {'potato': 20, 'meat':70, 'cheese':35, 'tea':15}
 
 print_basket(box)
-#print(print_basket_len(box))
-#print(add_bread(box))
-#print(print_item(box, 'meat'))
+print_basket_len(box)
+add_bread(box)
+print_item(box, 'meat')
 
 if __name__ == '__main__':
     app.run(debug=True)
