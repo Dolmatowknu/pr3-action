@@ -1,4 +1,3 @@
-import heapq
 from flask import Flask
 
 app = Flask(__name__)
@@ -7,7 +6,7 @@ print("pr3")
 
 @app.route('/')
 
-def print_item(box, itemname): #t
+def print_item(box, itemname):
     print(f'There is a price of {itemname}: ')
     return(box[itemname])
 
@@ -19,7 +18,7 @@ def add_bread(box):
     print('There is a basket with new item: ')
     return(box)
 
-def print_basket_len(box):#t
+def print_basket_len(box):
     print("Number of items in teh basket: ")
     return(len(box))
 

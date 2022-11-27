@@ -1,7 +1,8 @@
 import unittest
 import app as tapp
+import json
 
-class Testing(unittest.TestCase):
+class FlaskAppTests(unittest.TestCase):
     def test_print_item(self):
         self.assertEqual(tapp.print_item(tapp.box, 'cheese'), 35)
 
