@@ -13,7 +13,7 @@ def print_item(box, itemname):
 def add_bread(box):
     itemname = 'bread'
     itemvalue = 10
-    box[itemname] = {itemvalue}
+    box[itemname] = itemvalue
     return(box)
 
 def print_basket_len(box):
