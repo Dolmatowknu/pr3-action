@@ -23,7 +23,7 @@ def print_basket(box):
     return(f"{box}")
 
 
-box = {'potato': 20, 'meat':70, 'cheese':35, 'tea':15}
+box = {'potato': 20, 'meat':70, 'cheese':35, 'tea':16}
 
 print_basket(box)
 print_basket_len(box)
