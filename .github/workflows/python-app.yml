@@ -39,11 +39,6 @@ jobs:
         python3 -m unittest test.py
       env:
         CI: true
-    - name: deploy
-      run: |
-        docker build -t hello .
-        docker run -d -p 5000:5000 hello
-        docker ps -a
     - name: Log in to Docker Hub
       uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
       with:
