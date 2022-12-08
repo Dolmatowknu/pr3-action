@@ -55,8 +55,8 @@ jobs:
       uses: docker/setup-buildx-action@v2
     - name: Build and push
       uses: docker/build-push-action@v3
-    with: 
-      context: .
-      file: ./Dockerfile
-      push: true
-      tags: ${{ secrets.D_UN }}/meter-monitor:latest
+      with: 
+        context: .
+        file: ./Dockerfile
+        push: true
+        tags: ${{ secrets.D_UN }}/meter-monitor:latest
